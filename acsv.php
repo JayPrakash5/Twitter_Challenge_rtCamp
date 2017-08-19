@@ -1,8 +1,9 @@
 <?php
+
 session_start();
+$fetching_tweet_arr[] = $_SESSION['tweets_arr'];
 
 $fileName = 'tweets.csv';
-$_SESSION['$fetching_tweet_arr'] = $_POST['$fetching_tweet_arr'];
 header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 header('Content-Description: File Transfer');
 header("Content-type: text/csv");
@@ -15,14 +16,12 @@ $fh = @fopen( 'php://output', 'w' );
 $headerDisplayed = false;
 
 foreach ($fetching_tweet_arr as $data ) {
+    /*if ( !$headerDisplayed ) {
 
-    if ( !$headerDisplayed ) {
-
-        fputcsv($fh, array_keys($data));
+        fputcsv($fh, array_keys($data),"\n");
         $headerDisplayed = true;
-    }
- 
-    fputcsv($fh, $data);
+    }*/
+    fputcsv($fh, $data,"\n");
 }
 
 fclose($fh);
