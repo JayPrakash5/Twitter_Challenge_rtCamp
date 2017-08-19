@@ -131,18 +131,15 @@
 
 
 #wrap1 {
-    float: left;
     position: relative;
-    left: 46.2%;
     padding : 0px 0px 5px 0px;
+    margin:auto 0;
+    text-align: center;
 }
 
 #content1 {
-    float: left;
     position: relative;
-    left: -20%;
     padding : 5px 0px 15px 0px;
-
 }
 
 
