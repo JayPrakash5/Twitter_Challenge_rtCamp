@@ -7,4 +7,6 @@ The repository consists of 4 php files which includes
 2. slider.php - This file is included in the index.php and the sesion will exist. Now this has a jQuery slider which will show the top 10 tweets of the user in it and below that it will show the list of all the followers of that logged in user. It will also contain search.php in it that will be used to search amongst the followers of the user with the help of AJAX so without refreshing the page the followers can be searched.
 It is conataining a downlaod button as .csv to download the tweets inn a .csv file format. By clicking on the button it will redirect to the acsv.php page.
 
-3. acsv.php - It will contain the logic of how to get the tweets of the logged in user and it will downaload the tweets in a .csv file format.
+3. search.php - This will contain the searching logic used in AJAX for the followers of the logged in user.
+
+4. acsv.php - It will contain the logic of how to get the tweets of the logged in user and it will downaload the tweets in a .csv file format.
