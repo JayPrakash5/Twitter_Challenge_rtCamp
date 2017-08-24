@@ -1,6 +1,15 @@
 # Twitter_Challenge_rtCamp
 This is an assignment of the company rtCamp used to test the skills of candidates.
 
+Technologies Used
+HTMl,CSS,JAVASCRIPT,PHP,AJAX,JQUERY
+
+Library Used
+https://github.com/abraham/twitteroauth to interact with Twitter API
+
+Demo Link
+https://jayprakash56287.000webhostapp.com/
+
 The repository consists of 4 php files which includes
 1. index.php - It will be the first file that will be executed on the server. It will show the webpage which will ask the user to login to the twitter. It will use the twitter oAuth API for authentication and accessing the token for authentic login into twitter. After successfull login user will be again redirected to th same index.php file with session andslider.php file included in it. It will fetch the top 10 tweets of the users including all of their followers.
 
